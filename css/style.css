@@ -19,6 +19,63 @@ h6 {
 	margin: 0;
 }
 
+/* Add CSS styles for the links here */
+.nav-link {
+	border: 2px solid #333;
+	/* Border style */
+	padding: 10px 20px;
+	/* Padding to create spacing */
+	margin: 0 10px;
+	/* Margin to separate links */
+	text-decoration: none;
+	/* Remove underline */
+	border-radius: 5px;
+	/* Rounded corners */
+	color: #333;
+	/* Text color */
+	transition: background-color 0.3s, color 0.3s;
+	/* Transition effect */
+}
+
+.nav-link:hover {
+	background-color: #333;
+	/* Background color on hover */
+	color: #fff;
+	/* Text color on hover */
+}
+
+.navbar h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 28px;
+}
+
+.navbar a.nav-link {
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.navbar a.nav-link.active {
+	font-weight: bold;
+	/* Active link font weight */
+}
+
+.navbar .logo {
+	float: right;
+	/* Float the logo to the right */
+	margin-left: 20px;
+	/* Add margin to separate from links */
+}
+
+/* Decorative elements */
+.navbar::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
 ul,
 label {
 	margin: 0;
@@ -56,6 +113,10 @@ input[type="submit"],
 .navbar {
 	border-radius: 0px;
 	margin-bottom: 0;
+	background-color: #007bff;
+	/* Navbar background color */
+	padding: 15px 0;
+
 }
 
 .navbar-brand {

@@ -36,6 +36,139 @@
             padding: 20px;
             display: inline-block;
         }
+
+        /* Add CSS styles for the hover state of the link here */
+        .garnier-link {
+            color: #007bff;
+            /* Default link color */
+            text-decoration: none;
+            /* Remove underline */
+            transition: color 0.3s;
+            /* Transition effect for color change */
+        }
+
+        .garnier-link:hover {
+            color: #0000ff;
+            /* Blue color on hover */
+        }
+
+        /* Custom CSS for jumbotron decoration */
+        .custom-jumbotron {
+            border: 2px solid #e8e8e8;
+            /* Add a border */
+            border-radius: 10px;
+            /* Rounded corners */
+            margin: 15px;
+            /* Add some margin for spacing */
+            padding: 20px;
+            /* Add padding for content */
+            background-color: #fff;
+            /* Background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Add a box shadow */
+        }
+
+        /* Style for jumbotron titles */
+        .jumbotron h1 {
+            color: #333;
+            /* Title text color */
+        }
+
+        /* Style for jumbotron text */
+        .jumbotron p {
+            color: #666;
+            /* Text color */
+        }
+
+        /* Custom CSS for card decoration */
+        .custom-card {
+            border: 2px solid #000;
+            /* Add a border */
+            border-radius: 10px;
+            /* Rounded corners */
+            margin: 15px;
+            /* Add some margin for spacing */
+            padding: 20px;
+            /* Add padding for content */
+            background-color: #fff;
+            /* Background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Add a box shadow */
+        }
+
+        /* Style for card titles */
+        .custom-card h5 {
+            color: #333;
+            /* Title text color */
+            text-decoration: underline;
+            /* Add underline to titles */
+        }
+
+        /* Style for card text */
+        .custom-card p {
+            color: #666;
+            /* Text color */
+        }
+
+        /* Custom CSS for the form container */
+        .center-form {
+            border: 2px solid #000;
+            /* Add a border to the form container */
+            border-radius: 10px;
+            /* Rounded corners */
+            margin: 20px auto;
+            /* Center the form horizontally */
+            max-width: 400px;
+            /* Set a maximum width for the form container */
+            padding: 20px;
+            /* Add padding for content */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Add a box shadow */
+        }
+
+        /* Custom CSS for form labels */
+        label {
+            font-weight: bold;
+            /* Make labels bold */
+        }
+
+        /* Custom CSS for form input fields and select */
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            /* Make input fields and select full width */
+            padding: 10px;
+            /* Add padding to input fields and select */
+            margin-bottom: 10px;
+            /* Add margin between fields */
+            border: 1px solid #ccc;
+            /* Add a border to input fields and select */
+            border-radius: 5px;
+            /* Rounded corners */
+        }
+
+        /* Custom CSS for the submit button */
+        input[type="submit"] {
+            background-color: #007bff;
+            /* Change button background color */
+            color: #fff;
+            /* Change button text color */
+            padding: 10px 20px;
+            /* Add padding to the button */
+            border: none;
+            /* Remove button border */
+            border-radius: 5px;
+            /* Rounded corners */
+            cursor: pointer;
+            /* Add a pointer cursor on hover */
+        }
+
+        /* Custom CSS for the submit button on hover */
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            /* Change button background color on hover */
+        }
     </style>
 </head>
 
@@ -58,8 +191,8 @@
     </ul>
 
     </br>
-    <!-- This is the beginning of my Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
+
+    <div class="jumbotron jumbotron-fluid custom-jumbotron">
         <div class="container">
             <h1 class="display-4">Steals & Deals!</h1>
             <p class="lead">Along with our services, we offer a variety of specials that you may be interested in.
@@ -76,7 +209,9 @@
                 <!-- Jumbotron -->
                 <div class="jumbotron">
                     <h1 class="display-4">Garnier Products</h1>
-                    <p class="lead">Garnier is a well-known brand in the beauty and skincare industry, offering a wide
+                    <p class="lead"> <a href="https://www.garnierusa.com/shop-products/hair-care-and-style"
+                            class="garnier-link">Garnier</a>
+                        is a well-known brand in the beauty and skincare industry, offering a wide
                         range of products designed to enhance personal care and well-being. Watch the video to see some
                         of the hair coloring products we have in store.</p>
                 </div>
@@ -96,7 +231,7 @@
 
     <div class="row">
         <div class="col-sm-6">
-            <div class="card" style="border: 1px solid #000;">
+            <div class="card custom-card" style="border: 1px solid #000;">
                 <div class="card-body">
                     <h5 class="card-title"><u><b>Highlights/Color Special</b></u></h5>
                     <p class="card-text">With every highlights and hair color service, we offer a free eyebrow waxing
@@ -109,7 +244,7 @@
             </div>
         </div>
         <div class="col-sm-6">
-            <div class="card" style="border: 1px solid #000;">
+            <div class="card custom-card" style="border: 1px solid #000;">
                 <div class="card-body">
                     <h5 class="card-title"><u><b>Recommend a Friend!</b></u></h5>
                     <p class="card-text">In appreciation of our valued clientele, we have instituted a referral
